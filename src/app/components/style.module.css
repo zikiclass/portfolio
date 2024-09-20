@@ -1,0 +1,128 @@
+.container, .container_ex{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+}
+.container h4, .container_ex h4{
+    display: flex;
+    font-size: 2rem;
+    margin: 2rem 0;
+    position: relative;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+.container h4:after, .container_ex h4:after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    width: 40px;
+    background-color: #65f2f7;
+    height: 2px;
+    border-radius: 4px;
+
+}
+.content{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.box{
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 0.3px solid #65f2f7;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #011516;
+}
+.box ul li{
+    font-size: 13px;
+    list-style:disc;
+    padding-bottom: 12px;
+    margin-left: 10px;
+}
+.box p{
+    margin-bottom: 1rem;
+}
+.box h5{
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.btn{
+    padding: 0.7rem 2rem;
+    border-radius: 4px;
+    background-color:#65f2f7;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1.4rem!important;
+}
+.cont{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.cont h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #65f2f7;
+}
+.contact p{
+    display: flex;
+    gap: 0.6rem;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.8rem;
+    border: 1px solid #033638;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.contact:hover{
+    border-color: #095a5c;
+}
+.quickLinks{
+    display: flex;
+    flex-direction: column;
+}
+.quickLinks h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+.quickLinks div{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+    .cont{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .quickLinks div{
+        justify-content: center;
+        align-items: center;
+    }
+    .container_ex{
+        margin-top: 4rem;
+    }
+    .container_ex .content, .container .content{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .container_ex{
+        margin-top: 1rem;
+        
+    }
+}
