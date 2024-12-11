@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import img1 from "./../../../public/img/portfolio1.png";
+import img2 from "./../../../public/img/screen.png";
 import Image from "next/image";
 import Link from "next/link";
 const Portfolio = () => {
@@ -24,7 +25,19 @@ const Portfolio = () => {
           </Link>
         </div>
         <div className={styles.box}>
-          <Image src={img1} alt="Portfolio 1" />
+          <Image src={img2} alt="Portfolio 1" />
+          <h5>BlaqKouture Ecommerce</h5>
+          <p>Built with NextJS</p>
+          <p>
+            <i>Developed August 2024</i>
+          </p>
+          <Link
+            href="https://www.blaqkouture.com/"
+            className={styles.btn}
+            target="_blank"
+          >
+            View
+          </Link>
         </div>
         <div className={styles.box}>
           <Image src={img1} alt="Portfolio 1" />
