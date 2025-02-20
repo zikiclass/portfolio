@@ -68,10 +68,10 @@
   font-weight: bold;
   text-transform: uppercase;
   line-height: 4rem;
- 
+  color: #fff;
 }
 .carousel h3 span{
-  color: #65f2f7;
+  color: #65f2f7!important;
 }
 .carousel p{
   text-transform: uppercase;
