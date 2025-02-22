@@ -87,7 +87,25 @@
   cursor: pointer;
   font-weight: bold;
 }
-
+@media screen and (max-width: 800px){
+  .links{
+    display: none;
+  }
+  .carousel{
+    flex-direction:column-reverse;
+    margin-bottom: 2rem;
+  }
+  .carousel .content{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel h3{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
 @media screen and (min-width: 800px){
   .links{
     display: none;
